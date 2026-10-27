@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Explorer
 
-## Getting Started
+A lightweight project management portal built with **Next.js (App Router)**, **TypeScript** and **Tailwind CSS**.
 
-First, run the development server:
+## Run locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build && npm start   # production build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What is where
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Requirement | Where it lives |
+|---|---|
+| Home / About / Dashboard / Projects / Settings | `app/page.tsx`, `app/about`, `app/dashboard`, `app/projects`, `app/settings` |
+| Shared header + navigation | `app/layout.tsx`, `components/Navbar.tsx`, `components/NavLinks.tsx` |
+| Dashboard layout (sidebar, dashboard pages only) | `app/dashboard/layout.tsx` |
+| Dynamic route | `app/projects/[id]` |
+| Nested routes + nested layout | `app/projects/[id]/layout.tsx`, `team`, `tasks`, `activity` |
+| Catch-all route | `app/projects/[id]/docs/[[...slug]]/page.tsx` |
+| Search / filter with query parameters | `app/projects/page.tsx`, `components/ProjectFilters.tsx`, `components/ProjectList.tsx` |
+| Loading UI | `app/projects/[id]/loading.tsx`, `components/Skeletons.tsx` |
+| Error handling with retry | `app/projects/[id]/error.tsx` |
+| Streaming with Suspense | `app/dashboard/page.tsx`, `components/RecentActivity.tsx`, `components/TeamMembers.tsx` |
+| Client-side interactivity | `components/ThemeToggle.tsx`, `components/FavoriteButton.tsx` |
+| Not-found pages | `app/not-found.tsx`, `app/projects/[id]/not-found.tsx` |
+| Local JSON dataset | `data/projects.json`, `lib/projects.ts` |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Try these
 
-## Learn More
+- `/projects?search=nextjs`, `/projects?status=active`, `/projects?search=dashboard&status=completed`
+- `/projects/1`, `/projects/1/team`, `/projects/1/tasks`, `/projects/1/activity`
+- `/projects/1/docs`, `/projects/1/docs/setup`, `/projects/1/docs/setup/database`
+- `/projects/99` shows the custom not-found page.
+- `/projects/6` fails the first time it loads (simulated) so you can see the error UI; click **Try again** to load it.
+- `/dashboard` renders instantly while Recent Activity (about 2.5s) and Team Members (about 4.5s) stream in.
 
-To learn more about Next.js, take a look at the following resources:
+## Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Server Components are the default. Client Components are used only for interactivity: navigation highlighting, theme toggle, search filter, favourite button and project tabs.
+- Next.js 16 with Cache Components: request-dependent data (`params`, `searchParams`) and slow fetches sit inside `<Suspense>` / `loading.tsx` boundaries.

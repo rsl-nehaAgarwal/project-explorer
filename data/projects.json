@@ -1,0 +1,427 @@
+[
+  {
+    "id": "1",
+    "name": "Website Redesign",
+    "description": "Refresh the public marketing site with a new design system and faster pages.",
+    "status": "active",
+    "owner": "Priya Sharma",
+    "progress": 65,
+    "tags": [
+      "nextjs",
+      "design",
+      "frontend"
+    ],
+    "team": [
+      {
+        "name": "Priya Sharma",
+        "role": "Product Owner"
+      },
+      {
+        "name": "Arjun Mehta",
+        "role": "Tech Lead"
+      },
+      {
+        "name": "Neha Verma",
+        "role": "Frontend Engineer"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "1-t1",
+        "title": "Define scope for Website Redesign",
+        "status": "done"
+      },
+      {
+        "id": "1-t2",
+        "title": "Implement core features",
+        "status": "in-progress"
+      },
+      {
+        "id": "1-t3",
+        "title": "Write documentation and hand-off notes",
+        "status": "todo"
+      }
+    ],
+    "activity": [
+      {
+        "when": "2 hours ago",
+        "text": "Arjun Mehta updated the plan for Website Redesign"
+      },
+      {
+        "when": "Yesterday",
+        "text": "Priya Sharma reviewed the latest milestone"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Mobile App Launch",
+    "description": "Ship the first release of the customer mobile app to both app stores.",
+    "status": "active",
+    "owner": "Arjun Mehta",
+    "progress": 40,
+    "tags": [
+      "mobile",
+      "react-native"
+    ],
+    "team": [
+      {
+        "name": "Arjun Mehta",
+        "role": "Tech Lead"
+      },
+      {
+        "name": "Neha Verma",
+        "role": "Frontend Engineer"
+      },
+      {
+        "name": "Rohan Gupta",
+        "role": "Backend Engineer"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "2-t1",
+        "title": "Define scope for Mobile App Launch",
+        "status": "done"
+      },
+      {
+        "id": "2-t2",
+        "title": "Implement core features",
+        "status": "in-progress"
+      },
+      {
+        "id": "2-t3",
+        "title": "Write documentation and hand-off notes",
+        "status": "todo"
+      }
+    ],
+    "activity": [
+      {
+        "when": "2 hours ago",
+        "text": "Neha Verma updated the plan for Mobile App Launch"
+      },
+      {
+        "when": "Yesterday",
+        "text": "Arjun Mehta reviewed the latest milestone"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Analytics Dashboard",
+    "description": "Internal dashboard that visualises usage, revenue and retention metrics.",
+    "status": "completed",
+    "owner": "Neha Verma",
+    "progress": 100,
+    "tags": [
+      "dashboard",
+      "charts"
+    ],
+    "team": [
+      {
+        "name": "Neha Verma",
+        "role": "Frontend Engineer"
+      },
+      {
+        "name": "Rohan Gupta",
+        "role": "Backend Engineer"
+      },
+      {
+        "name": "Ananya Iyer",
+        "role": "UX Designer"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "3-t1",
+        "title": "Define scope for Analytics Dashboard",
+        "status": "done"
+      },
+      {
+        "id": "3-t2",
+        "title": "Implement core features",
+        "status": "done"
+      },
+      {
+        "id": "3-t3",
+        "title": "Write documentation and hand-off notes",
+        "status": "done"
+      }
+    ],
+    "activity": [
+      {
+        "when": "2 hours ago",
+        "text": "Rohan Gupta updated the plan for Analytics Dashboard"
+      },
+      {
+        "when": "Yesterday",
+        "text": "Neha Verma reviewed the latest milestone"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Customer Portal",
+    "description": "Self-service portal where customers manage subscriptions and invoices.",
+    "status": "active",
+    "owner": "Rohan Gupta",
+    "progress": 55,
+    "tags": [
+      "nextjs",
+      "auth"
+    ],
+    "team": [
+      {
+        "name": "Rohan Gupta",
+        "role": "Backend Engineer"
+      },
+      {
+        "name": "Ananya Iyer",
+        "role": "UX Designer"
+      },
+      {
+        "name": "Vikram Rao",
+        "role": "QA Engineer"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "4-t1",
+        "title": "Define scope for Customer Portal",
+        "status": "done"
+      },
+      {
+        "id": "4-t2",
+        "title": "Implement core features",
+        "status": "in-progress"
+      },
+      {
+        "id": "4-t3",
+        "title": "Write documentation and hand-off notes",
+        "status": "todo"
+      }
+    ],
+    "activity": [
+      {
+        "when": "2 hours ago",
+        "text": "Ananya Iyer updated the plan for Customer Portal"
+      },
+      {
+        "when": "Yesterday",
+        "text": "Rohan Gupta reviewed the latest milestone"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Design System",
+    "description": "Shared component library and design tokens used across all products.",
+    "status": "completed",
+    "owner": "Ananya Iyer",
+    "progress": 100,
+    "tags": [
+      "design",
+      "components"
+    ],
+    "team": [
+      {
+        "name": "Ananya Iyer",
+        "role": "UX Designer"
+      },
+      {
+        "name": "Vikram Rao",
+        "role": "QA Engineer"
+      },
+      {
+        "name": "Sneha Kulkarni",
+        "role": "Product Owner"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "5-t1",
+        "title": "Define scope for Design System",
+        "status": "done"
+      },
+      {
+        "id": "5-t2",
+        "title": "Implement core features",
+        "status": "done"
+      },
+      {
+        "id": "5-t3",
+        "title": "Write documentation and hand-off notes",
+        "status": "done"
+      }
+    ],
+    "activity": [
+      {
+        "when": "2 hours ago",
+        "text": "Vikram Rao updated the plan for Design System"
+      },
+      {
+        "when": "Yesterday",
+        "text": "Ananya Iyer reviewed the latest milestone"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Legacy System Migration",
+    "description": "Move the legacy order system to the new platform without downtime.",
+    "status": "on-hold",
+    "owner": "Vikram Rao",
+    "progress": 20,
+    "tags": [
+      "migration",
+      "backend"
+    ],
+    "team": [
+      {
+        "name": "Vikram Rao",
+        "role": "QA Engineer"
+      },
+      {
+        "name": "Sneha Kulkarni",
+        "role": "Product Owner"
+      },
+      {
+        "name": "Karan Malhotra",
+        "role": "Tech Lead"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "6-t1",
+        "title": "Define scope for Legacy System Migration",
+        "status": "in-progress"
+      },
+      {
+        "id": "6-t2",
+        "title": "Implement core features",
+        "status": "in-progress"
+      },
+      {
+        "id": "6-t3",
+        "title": "Write documentation and hand-off notes",
+        "status": "todo"
+      }
+    ],
+    "activity": [
+      {
+        "when": "2 hours ago",
+        "text": "Sneha Kulkarni updated the plan for Legacy System Migration"
+      },
+      {
+        "when": "Yesterday",
+        "text": "Vikram Rao reviewed the latest milestone"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "API Gateway",
+    "description": "Central gateway for authentication, rate limiting and request routing.",
+    "status": "active",
+    "owner": "Sneha Kulkarni",
+    "progress": 75,
+    "tags": [
+      "api",
+      "backend"
+    ],
+    "team": [
+      {
+        "name": "Sneha Kulkarni",
+        "role": "Product Owner"
+      },
+      {
+        "name": "Karan Malhotra",
+        "role": "Tech Lead"
+      },
+      {
+        "name": "Priya Sharma",
+        "role": "Frontend Engineer"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "7-t1",
+        "title": "Define scope for API Gateway",
+        "status": "done"
+      },
+      {
+        "id": "7-t2",
+        "title": "Implement core features",
+        "status": "in-progress"
+      },
+      {
+        "id": "7-t3",
+        "title": "Write documentation and hand-off notes",
+        "status": "todo"
+      }
+    ],
+    "activity": [
+      {
+        "when": "2 hours ago",
+        "text": "Karan Malhotra updated the plan for API Gateway"
+      },
+      {
+        "when": "Yesterday",
+        "text": "Sneha Kulkarni reviewed the latest milestone"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Internal Wiki",
+    "description": "Searchable knowledge base for engineering runbooks and onboarding guides.",
+    "status": "on-hold",
+    "owner": "Karan Malhotra",
+    "progress": 30,
+    "tags": [
+      "docs",
+      "nextjs"
+    ],
+    "team": [
+      {
+        "name": "Karan Malhotra",
+        "role": "Tech Lead"
+      },
+      {
+        "name": "Priya Sharma",
+        "role": "Frontend Engineer"
+      },
+      {
+        "name": "Arjun Mehta",
+        "role": "Backend Engineer"
+      }
+    ],
+    "tasks": [
+      {
+        "id": "8-t1",
+        "title": "Define scope for Internal Wiki",
+        "status": "done"
+      },
+      {
+        "id": "8-t2",
+        "title": "Implement core features",
+        "status": "in-progress"
+      },
+      {
+        "id": "8-t3",
+        "title": "Write documentation and hand-off notes",
+        "status": "todo"
+      }
+    ],
+    "activity": [
+      {
+        "when": "2 hours ago",
+        "text": "Priya Sharma updated the plan for Internal Wiki"
+      },
+      {
+        "when": "Yesterday",
+        "text": "Karan Malhotra reviewed the latest milestone"
+      }
+    ]
+  }
+]
